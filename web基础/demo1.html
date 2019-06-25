@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>demo</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+    }
+    .box1 {
+      font-size: 12px;
+      color: red;
+    }
+    .box2 .p1 {
+      font-size: 20px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1">
+    <h1>一念起天涯咫尺</h1>
+    <h1>一念灭咫尺天涯</h1>
+  </div>
+  <div class="box box2">
+    <button onclick="changeText(event)">点击修改dom元素</button>
+    <p class="p1" id="p1"></p>
+  </div>
+</body>
+<script>
+
+  function changeText(e) {
+    var p1 = document.getElementById('p1');
+    p1.innerText = Math.random();
+  }
+</script>
+</html>
