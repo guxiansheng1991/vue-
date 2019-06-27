@@ -25,6 +25,7 @@
     <!-- 组件 -->
     <component1 :text="component1Text" v-on:data1="accept"></component1>
 
+    <!-- 子路由 -->
     <router-view></router-view>
   </div>
 </template>
